@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Signup</title>
+    <style>
+        /* Set background image for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/974314/pexels-photo-974314.jpeg?auto=compress&cs=tinysrgb&w=600'); /* URL for the background image */
+            background-size: cover; /* Ensure the image covers the entire background */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Make the background image fixed while scrolling */
+            color: #fff; /* Set text color to white for visibility */
+        }
+        .signup-container {
+            width: 300px;
+            margin: auto;
+            padding: 30px;
+            background-color: #d2b48c; /* Lightish brown color */
+            border-radius: 5px;
+            opacity: 0.9; /* Slightly transparent container */
+        }
+        .signup-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .signup-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .signup-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Farmer Signup</h2>
+        <form action="/farmer/signup" method="POST">
+            <input type="text" name="name" placeholder="Enter Name" required>
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <button type="submit">Signup</button>
+        </form>
+        <p>Already have an account? <a href="/farmer/login" style="color: #4CAF50;">Login here</a></p>
+    </div>
+</body>
+</html>
