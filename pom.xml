@@ -11,7 +11,7 @@
 	<groupId>com.example.farmingapp</groupId>
 	<artifactId>farming-platform</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>FarmingPlatForm</name>
 	<description>A platform to raise awareness about farming, connect farmers with various sectors, and provide resources and support for improved livelihoods.</description>
 	<url/>
